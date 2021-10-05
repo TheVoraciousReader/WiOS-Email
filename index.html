@@ -9,7 +9,7 @@
         body{
             margin: 0;
             padding: 0;
-            background-color: rgb(209, 229, 255);
+            background-color: rgb(231, 231, 231);
         }
         table{
             border-spacing: 0;
@@ -28,13 +28,13 @@
         .container {
             width: 100%;
             table-layout: fixed;
-            background-color: rgb(209, 229, 255);
+            background-color: rgb(231, 231, 231);
             padding-bottom: 20px;
         }
         
         .content-view {
             max-width: 600px;
-            background-color: #f8f8ff;
+            background-color: #ffffff;
         }
 
         .outer {
@@ -52,6 +52,37 @@
             font-size: 0.8rem;
             padding: 12px;
         }
+        .ext-link {
+            text-decoration: none;
+            color: rgb(248, 64, 8);
+            font-weight: bold;
+        }
+        .button {
+            background-color: rgb(131, 131, 131);
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px 10px 15px;
+            border-radius: 5px;
+        }
+        .inner {
+            background-color: rgba(250, 235, 215, 0.479);
+            width: 100%;
+            padding: 10px 0px 10px 0px;
+        }
+        p {
+            line-height: 1.5rem;
+        }
+        .event {
+		list-style: none;
+		text-align: left;
+		line-height: 30px;
+	}
+
+    @media screen and (max-width: 400px) {
+        h1.title {
+            visibility: hidden;
+        }
+    }
     </style>
 </head>
 <body>
@@ -62,8 +93,11 @@
                     <td>
                         <table class="header" width="100%">
                             <tr>
-                                <td style="background-color: #f8f8ff;border-spacing: 0;padding-left:30px;padding-top: 30px;padding-bottom: 20px;">
+                                <td class="logo" style="background-color: #ffffff;border-spacing: 0;padding: 30px 10px 0px 30px;">
                                     <a href="https://wios.co.in/"><img src="https://raw.githubusercontent.com/WiOSc/website/master/static/logo-100x100.png" alt="WiOS Logo"></a>
+                                </td>
+                                <td style="padding: 30px 30px 0px 0px;">
+                                    <h1 class="title">Hacktoberfest 2021</h1>
                                 </td>
                             </tr>
                         </table>
@@ -71,23 +105,55 @@
                 </tr>
                 <tr>
                     <td>
-                        <table class="main">
+                        <table class="main" width="100%">
                             <tr>
                                 <td>
-                                    <h2 style="padding-left:30px;padding-right: 30px;">Open Source Talks Ep 2</h2>
-                                    <p style="padding-left:30px;padding-right: 30px;padding-top: 0px;padding-bottom: 0px;">Lorem ipsum dolor sit amet,</p>
-                                    <p style="padding:30px;padding-right: 30px;padding-top: 0px;padding-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
-                                    <p style="padding:30px;padding-right: 30px;padding-top: 0px;padding-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
-                                </td>
+                                    <h2 style="padding:0px 30px 0px 30px;">Open Source Talks Ep 2</h2>
+                                    <p style="padding:0px 30px 30px 30px;text-align: justify;">We are happy to inform you WiOS (Women in Open Source) in collaboration with the Open Source Community is back with another exciting event as a part of the Hacktoberfest. Hacktoberfest, in its 8th year, is a month-long celebration of open source software run by DigitalOcean. </p>
+                                    </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center;">
-                                    <a href="https://wios.co.in/blog/"><img src="https://raw.githubusercontent.com/WiOSc/website/master/static/logo-max-size.png" alt="Event" height="300px" width="300px"></a>
+                                    <a href="https://wios.co.in/blog/"><img src="./static/hacktober_fest.png" alt="Event" height="120px"></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p style="padding:30px;padding-right: 30px;padding-top: 0px;padding-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
+                                    <p style="padding:30px 30px 30px 30px;text-align: justify;">The tremendous response that we got for Open Source Talks Episode 1 gave the WiOS team, in collaboration with OSC, an incentive to come up with Episode 2 and hence we heartly invite you to OSC Talks: Episode 2. This talk mainly emphasizes on a communication technology named “MATRIX”. </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="inner">
+                                        <tr>
+                                            <td style="padding: 30px 0px 30px 30px;">
+                                                <a href="https://matrix.org/"><img src="./static/matrix-logo.png" alt="Matrix logo"></a>
+                                            </td>
+                                            <td style="padding: 15px 30px;">
+                                                <h3>So, what exactly is Matrix? </h3>
+                                                <p style="text-align: justify; padding-bottom: 10px;">Matrix is an open-source project that publishes the “Matrix open standard” for
+                                                    secure, decentralised, real-time communication, and its Apache licensed 
+                                                    reference implementations. Matrix gives you simple <a href="https://matrix.org/docs/spec/" class="ext-link">HTTP APIs</a> and <a href="https://matrix.org/sdks/" class="ext-link">SDKs</a> (iOS, Android, Web) to create 
+                                                    chatrooms, direct chats and chat bots, complete with end-to-end encryption, file
+                                                    transfer, synchronised conversation history, formatted messages, read receipts
+                                                    and more.
+                                                </p>
+                                                <a href="#" class="button"> Register Now! </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 30px 10px 30px;">
+                                    <h4>Join us now for an eye opening experience!</h4>
+                                    <ul class="event">
+                                        <li> Date: October 11th, Monday.</li>
+                                        <li> Time: 5pm to 6pm </li>
+                                        <li> Speaker: Aravinth Manivannan </li>
+                                    </ul>
+                                    <h4>Register <a href="#" class="ext-link">here</a>.</h4>
+                                    <p><span style="font-weight: bold;">Note: </span><span>The deadline for registering is _ October, 2021.</span></p>
                                 </td>
                             </tr>
                         </table>
@@ -106,7 +172,7 @@
                                     <a href="https://www.youtube.com/channel/UCc7KEMTSZaCVq-vKF9vkwQw" style="padding: 5px;"><img src="https://raw.githubusercontent.com/alan2000alex/WiOS-Email/main/static/youtube_social_circle_white.png" height="25px" alt="Youtube"></a>
                                     <a href="mailto:wios@vitap.ac.in" style="padding: 5px;"><img src="https://raw.githubusercontent.com/alan2000alex/WiOS-Email/main/static/mail-modified.png" height="25px" width="25px" alt="Email"></a>
                                     <a href="https://instagram.com/wios_vitap" style="padding: 5px;"><img src="https://raw.githubusercontent.com/alan2000alex/WiOS-Email/main/static/Instagram_Glyph_Gradient_RGB.png" height="25px" alt="Instagram"></a>
-                                    <p style="padding:30px;padding-right: 30px;padding-top: 0px;padding-bottom: 0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
+                                    <p style="padding:30px;padding-right: 30px;padding-top: 0px;padding-bottom: 0px;">Women in Open Source(WiOS) is committed to bringing diversity in technology. </p>
                                 </td>
                             </tr>
                         </table>
