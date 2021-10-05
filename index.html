@@ -11,7 +11,7 @@
             padding: 0;
             background-color: rgb(209, 229, 255);
         }
-        /* table{
+        table{
             border-spacing: 0;
         }
         td {
@@ -19,7 +19,12 @@
         }
         img {
             border: 0;
-        } */
+        }
+        p {
+            margin: 0;
+            border-spacing: 0;
+            padding: 0;
+        }
         .container {
             width: 100%;
             table-layout: fixed;
@@ -41,6 +46,10 @@
             color: rgb(68, 68, 68);
 
         }
+        .footer {
+            background-color: rgb(124, 124, 124);
+            color: rgb(224, 224, 224);
+        }
     </style>
 </head>
 <body>
@@ -49,9 +58,9 @@
             <table class="outer" align="center">
                 <tr>
                     <td>
-                        <table width="100%">
+                        <table class="header" width="100%">
                             <tr>
-                                <td style="background-color: rgb(255, 255, 255);border-spacing: 0;">
+                                <td style="background-color: rgb(255, 255, 255);border-spacing: 0;padding-left:30px;padding-top: 30px;padding-bottom: 20px;">
                                     <a href="https://wios.co.in/"><img src="https://raw.githubusercontent.com/WiOSc/website/master/static/logo-100x100.png" alt="WiOS Logo"></a>
                                 </td>
                             </tr>
@@ -60,18 +69,42 @@
                 </tr>
                 <tr>
                     <td>
-                        <table>
+                        <table class="main">
                             <tr>
                                 <td>
-                                    <h2 style="padding:10px">Open Source Talks Ep 2</h2>
-                                    <p style="padding-left:10px;padding-right: 10px;">Lorem ipsum dolor sit amet,</p>
-                                    <p style="padding:10px;padding-right: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
-                                    <p style="padding:10px;padding-right: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
+                                    <h2 style="padding-left:30px;padding-right: 30px;">Open Source Talks Ep 2</h2>
+                                    <p style="padding-left:30px;padding-right: 30px;">Lorem ipsum dolor sit amet,</p>
+                                    <p style="padding:30px;padding-right: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
+                                    <p style="padding:30px;padding-right: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center;">
                                     <a href="https://wios.co.in/blog/"><img src="https://raw.githubusercontent.com/WiOSc/website/master/static/logo-max-size.png" alt="Event" height="300px" width="300px"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p style="padding:30px;padding-right: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table class="footer" width="100%" style="text-align: center;">
+                            <tr>
+                                <td>
+                                    <h3>Connect with us</h3>
+                                    <a href="#" style="padding-left: 1px;"><img src="https://raw.githubusercontent.com/WiOSc/website/6bdaa975069f96447ad51d1c17daecdbbf6ce948/static/icons/github.svg" alt="Github"></a>
+                                    <a href="#"><img src="https://raw.githubusercontent.com/WiOSc/website/6bdaa975069f96447ad51d1c17daecdbbf6ce948/static/icons/linkedin.svg" alt="LinkedIn"></a>
+                                    <a href="#"><img src="https://raw.githubusercontent.com/WiOSc/website/6bdaa975069f96447ad51d1c17daecdbbf6ce948/static/icons/discord.svg" alt="Discord"></a>
+                                    <a href="#"><img src="https://raw.githubusercontent.com/WiOSc/website/6bdaa975069f96447ad51d1c17daecdbbf6ce948/static/icons/youtube.svg" alt="Youtube"></a>
+                                    <a href="#"><img src="https://raw.githubusercontent.com/WiOSc/website/6bdaa975069f96447ad51d1c17daecdbbf6ce948/static/icons/mail.svg" alt="Email"></a>
+                                    <a href="#"><img src="https://raw.githubusercontent.com/WiOSc/website/6bdaa975069f96447ad51d1c17daecdbbf6ce948/static/icons/instagram.svg" alt="Instagram"></a>
+                                    <p style="padding:30px;padding-right: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi eget mauris pharetra et. Sit amet massa vitae tortor condimentum lacinia quis vel. At volutpat diam ut venenatis tellus in. </p>
                                 </td>
                             </tr>
                         </table>
@@ -84,3 +117,4 @@
     </center>
 </body>
 </html>
+
